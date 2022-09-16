@@ -49,8 +49,21 @@
     </developer>
   </developers>
 
+   <repositories>
+     <repository>
+       <id>snapshots-repo</id>
+         <url>https://repository.apache.org/content/repositories/orgapacheqpid-1245</url>
+       <releases>
+         <enabled>true</enabled>
+       </releases>
+       <snapshots>
+         <enabled>false</enabled>
+       </snapshots>
+     </repository>
+  </repositories>
+
   <properties>
-    <qpid-jms-version>2.0.0</qpid-jms-version>
+    <qpid-jms-version>2.1.0</qpid-jms-version>
     <artemis-version>2.25.0</artemis-version>
     <commons-pool2-version>2.11.1</commons-pool2-version>
     <slf4j-version>1.7.36</slf4j-version>

@@ -25,10 +25,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Build & Test
-        run: mvn clean verify
+        run: mvn clean verify --update-snapshots
 
       - name: Javadoc etc
-        run: mvn clean verify -Prelease -Dgpg.skip -DskipTests
+        run: mvn clean verify --update-snapshots -Prelease -Dgpg.skip -DskipTests
 
       - name: RAT check
         run: mvn clean -Prelease apache-rat:check
