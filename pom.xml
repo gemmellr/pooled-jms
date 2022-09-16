@@ -49,8 +49,21 @@
     </developer>
   </developers>
 
+   <repositories>
+     <repository>
+       <id>snapshots-repo</id>
+         <url>https://repository.apache.org/content/repositories/orgapacheqpid-1246</url>
+       <releases>
+         <enabled>true</enabled>
+       </releases>
+       <snapshots>
+         <enabled>false</enabled>
+       </snapshots>
+     </repository>
+  </repositories>
+
   <properties>
-    <qpid-jms-version>1.6.0</qpid-jms-version>
+    <qpid-jms-version>1.7.0</qpid-jms-version>
     <activemq-version>5.17.0</activemq-version>
     <artemis-version>2.21.0</artemis-version>
     <commons-pool2-version>2.11.1</commons-pool2-version>
